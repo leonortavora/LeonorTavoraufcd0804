@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript While Loop</h2>
+<h3>while original do w3schools</h3>
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+
+let text = "";
+let i = 1;
+while (i <= 10) {
+ text +="<br>The number is " + i;
+ i++;
+}
+document.getElementById("demo").innerHTML = text;
+
+text = "";
+i = 1;
+let soma=0;
+while (i <= 10) {
+ text += "<br>The number is " + i+" e a soma é "+(soma+=i);
+ i++;
+}
+document.getElementById("demo1").innerHTML = text;
+
+document.write('<h3>while alterado por nós</h3>');
+text = "";
+i = 0;
+while (i < 10) {
+ document.write("<br>O número é " + i);
+ i++;
+}
+
+document.write('<h3>do-while - teste à saída</h3>');
+text = "";
+//i = 0;
+do {
+ document.write("<br> O número é " +i);
+ i++;
+} while (i < 10);
+
+document.write('<h3>do-while - exibir número em ordem descrescente</h3>');
+text = "";
+do {
+ document.write("<br>O número é " + i);
+ i--;
+} while (i >= 0);
+
+document.write('<h3>ciclo for </h3>');
+for (let index =0; index < 10; index++) {
+ document.write("<br>O número é " + index);
+}
+// document.write(br>O número é " + index); // variavel  não está definida  fora do ciclo
+
+document.write('<h3>ciclo for com variável  definida  fora do ciclo</h3>');
+let index
+for (index = 0; index < 10; index++) {
+ document.write("<br>O número é " + index);
+}
+document.write("<br>O index no fim  do ciclo ficou com o valor " + index);
+
+</script>
+
+</body>
+</html>

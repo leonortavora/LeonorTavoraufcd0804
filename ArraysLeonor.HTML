@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <h2>JavaScript Arrays</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const cars = [];
+        cars[0] = "Saab";
+        cars[1] = "Volvo";
+        cars[2] = "BMW";
+        document.getElementById("demo").innerHTML = cars;
+        cars[0] = 0;
+        cars[1] = "Honda"; cars[0] += 1;
+        cars[2] = "Subaru"; cars[0] += 1;
+        cars[3] = "Ferrari"; cars[0] = 1;
+        cars[4] = "Toyota"; cars[0] += 1;
+        cars[5] = "Peugeot"; cars[0] += 1;
+
+        document.write(cars+ '<br><br>');
+        const element = [];
+        for (let index = 0; index < 10; index++) {
+            element[index] = index;
+    }
+    document.write(element);
+    document.write('<br><br>'); 
+    const element1= [];
+    for (let index = 0; index < 20; index++) {
+    element1[index] = index
+    }
+    document.write(element1)
+
+    document.write('<br><br>');
+    const element2 = [];
+    let fin = 'N';
+    for (let index = 0; fin != 'S'; index++) {
+    element2[index] = prompt ('Insira o nome do aluno: '); 
+    fin = prompt('Deseja terminar: (S/N)');
+    }
+    document.write(element2);
+
+    document.write('<br><br>');
+    const element3 = [];
+    const numNomes = parseInt(prompt('Quantos nomes quer inserir?')); 
+    for (let index = 0; index < numNomes; index++) {
+    element3[index] = prompt('Insira o nome do aluno: ');
+    }
+    document.write(element3);
+    document.write('<br><br>');
+
+    aluno[0] = ['jorge', 'M', 13.5, 14.9, 18.7]; 
+    aluno[1] = ['Luisa', 'F', 12, 15, 16];
+    document.write(aluno);
+
+    </script>
+</body>
+    
+</html>
